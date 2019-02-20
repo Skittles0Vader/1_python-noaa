@@ -32,7 +32,8 @@ Available methods are:
 * fetch_data
 
 Parameters can be passed as arguments within the method call:
+## weather_data = data.fetch_data(datasetid='GHCND', locationid='ZIP:28801', startdate='2010-05-01', enddate='2010-05-02', limit=1000
 ```
-weather_data = data.fetch_data(datasetid='GHCND', locationid='ZIP:28801', startdate='2010-05-01', enddate='2010-05-02', limit=1000
+weather_data = data.fetch_data(datasetid='GHCND', locationid='ZIP:78704', startdate='2019-01-01', enddate='2019-01-02', limit=1000
 ```
 Calling a method without the minimum required parameters will result in a 400 error. Read the API docs to determine what, if any parameters are required by each specific method.

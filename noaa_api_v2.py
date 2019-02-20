@@ -61,12 +61,12 @@ class NOAAData(object):
         req_type = 'stations'
         return self.poll_api(req_type, kwargs)
 
-    # Fetch information about specific dataset
+    # 1c) Fetch information about specific dataset
     def dataset_spec(self, set_code, **kwargs):
         req_type = 'datacategories/' + set_code
         return self.poll_api(req_type, kwargs)
 
-    # Fetch data
+    # 3 yeah...) Fetch data
     # http://www.ncdc.noaa.gov/cdo-web/webservices/v2#data
     def fetch_data(self, **kwargs):
         req_type = 'data'
